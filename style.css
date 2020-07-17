@@ -121,7 +121,7 @@ header .cta-btn {
 /* Modal */
 .modal-container {
   background-color: rgba(0, 0, 0, 0.6);
-
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -169,11 +169,16 @@ header .cta-btn {
   display: block;
   margin-bottom: 7px;
 }
-.modal-content input {
+.modal-content .form-input {
   padding: 10px;
   width: 100%;
 }
 
 .modal-content input:focus {
   outline: none;
+}
+
+.modal-content .submit-btn {
+  background: var(--secondary-color);
+  color: #fff;
 }
