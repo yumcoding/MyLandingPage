@@ -2,8 +2,8 @@
 
 :root {
   --modal-duration: 1s;
-  --primary-color: #30336b;
-  --secondary-color: #be2edd;
+  --primary-color: #303960;
+  --secondary-color: #ea9a96;
 }
 
 * {
@@ -25,4 +25,34 @@ nav {
   left: 0;
   width: 200px;
   height: 100vh;
+  transform: translateX(-100%);
+}
+
+nav .logo {
+  padding: 40px 0;
+  text-align: center;
+}
+
+nav .logo img {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  padding: 20px;
+  border-bottom: 1px dotted #e5e5e5;
+}
+
+nav ul li:first-of-type {
+  border-top: 1px dotted #e5e5e5;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #e5e5e5;
 }
