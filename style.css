@@ -15,6 +15,11 @@
 
 body {
   font-family: "Lato", sans-serif;
+  transition: transform 0.3s ease;
+}
+
+body.shownav {
+  transform: translateX(200px);
 }
 
 /* Utility */
