@@ -15,3 +15,14 @@
 body {
   font-family: "Lato", sans-serif;
 }
+
+/* Nav */
+nav {
+  background: var(--primary-color);
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100vh;
+}
