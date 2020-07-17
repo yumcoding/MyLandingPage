@@ -143,6 +143,8 @@ header .cta-btn {
   width: 400px;
   max-width: 100%;
   border-radius: 8px;
+  animation-name: showmodal;
+  animation-duration: 1s;
 }
 
 .modal .modal-header {
@@ -186,4 +188,13 @@ header .cta-btn {
 .modal-content .submit-btn {
   background: var(--secondary-color);
   color: #fff;
+}
+
+@keyframes showmodal {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
