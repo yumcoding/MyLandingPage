@@ -4,6 +4,7 @@
   --modal-duration: 1s;
   --primary-color: #303960;
   --secondary-color: #ea9a96;
+  --light-color: #e5e5e5;
 }
 
 * {
@@ -16,10 +17,18 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+/* Utility */
+button,
+input[type="submit"] {
+  cursor: pointer;
+  padding: 10px;
+  border: 0;
+  border-radius: 5px;
+}
+
 /* Nav */
 nav {
   background: var(--primary-color);
-  color: white;
   position: fixed;
   top: 0;
   left: 0;
@@ -45,14 +54,44 @@ nav ul {
 
 nav ul li {
   padding: 20px;
-  border-bottom: 1px dotted #e5e5e5;
+  border-bottom: 1px dotted var(--light-color);
 }
 
 nav ul li:first-of-type {
-  border-top: 1px dotted #e5e5e5;
+  border-top: 1px dotted var(--light-color);
 }
 
 nav ul li a {
   text-decoration: none;
-  color: #e5e5e5;
+  color: var(--light-color);
+}
+
+/* Header */
+header {
+  background: var(--primary-color);
+  color: #fff;
+  text-align: center;
+  padding: 40px 0;
+}
+
+header h1 {
+  font-size: 45px;
+}
+header p {
+  margin: 20px 0;
+  font-size: 15px;
+}
+
+header .toggle-btn {
+  background: #22244b;
+  color: #fff;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+header .cta-btn {
+  background: var(--secondary-color);
+  color: #fff;
+  font-size: 20px;
 }
